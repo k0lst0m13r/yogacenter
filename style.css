@@ -1,0 +1,238 @@
+
+/* ------ NAVBAR ------*/ 
+
+nav {
+    text-align: left;
+}
+
+nav a {
+ font-size: 1.5rem;
+ font-style: italic;
+ font-weight: bolder;
+ text-decoration: none;
+ color: white;
+ padding-right: 20px;
+ text-shadow: 3px 3px 3px rgb(51, 12, 12);
+}
+
+nav a:hover {
+ color: rgb(251, 195, 167);
+ text-decoration: underline;
+ font-size: 1.6rem;
+}
+
+/*--------- HOME ---------*/
+
+#home {
+    width: auto;
+    background-image: url(imagenes/banner.png);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #ffffff;
+    padding: 50px;
+    border-top-left-radius: 12px;  
+    border-top-right-radius: 12px;  
+}
+
+#encabezado {
+    color: rgb(73, 27, 27);
+    font-size: 6rem;
+    margin-bottom: 20%;
+    text-shadow: 5px 5px 5px rgb(177, 153, 97)    
+}
+
+#main {
+    text-align: right;
+    margin-left: 30%;
+}
+
+
+/*--------- ABOUT ---------*/
+
+#about{
+    
+    padding-top: 30px;
+    background: linear-gradient(rgb(224, 198, 139), white);
+}
+
+.aboutleft {
+    height: 300px;    
+    width: 50%;
+    float: left;
+    background-color: rgb(218, 215, 215);
+    padding: 30px;
+    color: rgb(59, 15, 15);
+}
+.aboutright {
+    height: 300px;
+    float: right;
+    text-align: center;
+    margin-bottom: 80px;
+
+}
+
+/*-------- STAFF ----------*/
+
+#staff {
+    clear: both;
+    padding: 20px;
+    background-color: rgb(255, 172, 131);    
+}
+
+.profile {
+    padding-top: 30px;
+    width: auto;
+    margin-inline: auto;
+}
+
+.profile li {
+   background:linear-gradient(rgb(251, 195, 167), rgb(254, 243, 238)); 
+   display: inline-block; 
+   text-align: center;
+   width: 30%;
+   vertical-align: top;
+   margin: 0 1%; 
+   border-radius: 9px;
+   color:rgb(59, 15, 15);
+}
+
+.profile img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%; 
+    border-style: solid; 
+   border-color: rgb(59, 15, 15); 
+   border-width: 2px;      
+}
+
+.name {
+    font-style: oblique;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/*---------- CONTACT -------*/
+
+form label {
+    display: block;    
+}
+
+form input, form textarea { 
+    width: 300px;
+    display: block;
+    padding: 3px;
+   margin-bottom: 10px;
+}
+
+ul {
+    margin-top: 30px;
+}
+
+.item {
+    font-style: italic;
+    font-weight: bolder;
+}
+
+#contact {
+    padding-top: 30px;
+    margin-inline: auto;
+    background: linear-gradient(rgb(224, 198, 139), white); 
+         
+}
+
+.button {
+    width: 310px;
+    padding: 10px;
+    color: rgb(59, 15, 15);
+    border-radius: 9px;
+    background-color: rgb(255, 172, 131); 
+    font-style: italic;
+    font-size: large;
+    font-family: 'Times New Roman', Times, serif; 
+    font-weight: bolder; 
+    transition: 0.5s all;
+}
+
+.button:hover {
+    background-color: rgb(255, 143, 87);
+    transform: scale(1.05);
+}
+
+ .left {
+    width: 50%;
+    float: left;
+    padding-left: 150px;
+    color: rgb(59, 15, 15);
+ }
+
+ .right {
+    float: right;
+    text-align: right;
+    padding-right: 150px;
+ }
+
+
+/*-------- FOOTER ---------*/
+
+
+footer {
+    margin-top: 500px;
+    color: white;
+    text-align: center;
+    background-color: rgb(59, 15, 15);
+    padding: 3px;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px; 
+    clear: both;   
+}
+
+footer img { 
+    width: 100px;   
+    border-radius: 50%;
+    border-style: solid; 
+    border-color: white; 
+    border-width: 2px;
+    margin-top: 18px;
+}
+
+.copyleft {
+    color: white;
+    font-size: 12px;
+}
+
+/*------ MISCELANEAS -----*/
+ 
+.destacado {
+    font-size: 20px;
+    font-style: italic;
+}
+
+.seccion {
+    text-align: center;
+    text-decoration: underline;
+    font-size: 2em;
+    font-style: italic;
+    font-weight: bolder;
+    color:rgb(59, 15, 15);
+
+}
+
+@media screen and (max-width: 480px){
+   #home, #about, .aboutleft, .aboutright, .profile {
+    width: auto;
+   } 
+
+   #encabezado {
+    font-size: 3rem;
+   }
+}
+
+
+
+
+
+
+
+
+
