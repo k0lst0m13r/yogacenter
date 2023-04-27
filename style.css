@@ -11,7 +11,7 @@ nav a {
  font-weight: bolder;
  text-decoration: none;
  color: white;
- padding-right: 20px;
+ padding-right: 2%;
  text-shadow: 3px 3px 3px rgb(51, 12, 12);
 }
 
@@ -30,16 +30,18 @@ nav a:hover {
     background-repeat: no-repeat;
     background-size: cover;
     color: #ffffff;
-    padding: 50px;
+    padding: 5%;
     border-top-left-radius: 12px;  
     border-top-right-radius: 12px;  
 }
 
 #encabezado {
     color: rgb(73, 27, 27);
-    font-size: 6rem;
+    font-size: 8rem;
+    font-family: Samarkan;
     margin-bottom: 20%;
-    text-shadow: 5px 5px 5px rgb(177, 153, 97)    
+    text-shadow: 5px 5px 5px rgb(177, 153, 97);
+    margin-left: 10%;   
 }
 
 #main {
@@ -57,53 +59,58 @@ nav a:hover {
 }
 
 .aboutleft {
-    height: 300px;    
-    width: 50%;
+    height: 100%;    
+    width: 44%;
     float: left;
     background-color: rgb(218, 215, 215);
-    padding: 30px;
+    padding:3%;
     color: rgb(59, 15, 15);
 }
+
 .aboutright {
-    height: 300px;
+    width: 50%;
+    height: auto;
     float: right;
     text-align: center;
-    margin-bottom: 80px;
+    color: white;
+    background-color: black;
+}
 
+.big-picture img {
+    width: 100%;
+}
+
+.big-picture {
+    padding-bottom: 5%;
 }
 
 /*-------- STAFF ----------*/
 
 #staff {
     clear: both;
-    padding: 20px;
+    padding: 10%;
     background-color: rgb(255, 172, 131);    
 }
 
-.profile {
-    padding-top: 30px;
-    width: auto;
-    margin-inline: auto;
-}
 
 .profile li {
-   background:linear-gradient(rgb(251, 195, 167), rgb(254, 243, 238)); 
-   display: inline-block; 
-   text-align: center;
-   width: 30%;
-   vertical-align: top;
-   margin: 0 1%; 
-   border-radius: 9px;
-   color:rgb(59, 15, 15);
+    background:linear-gradient(rgb(251, 195, 167), rgb(254, 243, 238)); 
+    display: inline-block; 
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin: 1%;
+    border-radius: 9px;
+    color:rgb(59, 15, 15);
 }
 
 .profile img {
-    width: 200px;
-    height: 200px;
+    width:75%;
+    height:75%;
     border-radius: 50%; 
     border-style: solid; 
-   border-color: rgb(59, 15, 15); 
-   border-width: 2px;      
+    border-color: rgb(59, 15, 15); 
+    border-width: 2px;      
 }
 
 .name {
@@ -114,35 +121,25 @@ nav a:hover {
 
 /*---------- CONTACT -------*/
 
+#contact {
+    padding-top: 30px;
+    background: linear-gradient(rgb(224, 198, 139), white); 
+         
+}
+
 form label {
     display: block;    
 }
 
 form input, form textarea { 
-    width: 300px;
+    width: 43%;
     display: block;
     padding: 3px;
    margin-bottom: 10px;
 }
 
-ul {
-    margin-top: 30px;
-}
-
-.item {
-    font-style: italic;
-    font-weight: bolder;
-}
-
-#contact {
-    padding-top: 30px;
-    margin-inline: auto;
-    background: linear-gradient(rgb(224, 198, 139), white); 
-         
-}
-
 .button {
-    width: 310px;
+    width: 45%;
     padding: 10px;
     color: rgb(59, 15, 15);
     border-radius: 9px;
@@ -159,6 +156,17 @@ ul {
     transform: scale(1.05);
 }
 
+ul {
+    margin-top: 30px;
+}
+
+.item {
+    font-style: italic;
+    font-weight: bolder;
+}
+
+
+
  .left {
     width: 50%;
     float: left;
@@ -169,8 +177,14 @@ ul {
  .right {
     float: right;
     text-align: right;
-    padding-right: 150px;
- }
+    padding-right: 10%;
+}
+
+.right img {
+    width: 17%;
+    padding-left: 5%;
+    margin-top: 10%;
+}
 
 
 /*-------- FOOTER ---------*/
@@ -204,7 +218,7 @@ footer img {
 /*------ MISCELANEAS -----*/
  
 .destacado {
-    font-size: 20px;
+    font-size: 1.3rem;
     font-style: italic;
 }
 
@@ -218,14 +232,63 @@ footer img {
 
 }
 
+@font-face {
+    font-family: Samarkan;
+    src: url(fonts/Samarkan.ttf) format("truetype");
+}
+
 @media screen and (max-width: 480px){
-   #home, #about, .aboutleft, .aboutright, .profile {
-    width: auto;
-   } 
+
+    nav {
+        text-align: center;
+    }
+
+    nav a {
+        font-size: 1.2rem;
+    }
+
+    #home {
+        background-position: right;
+    }   
 
    #encabezado {
-    font-size: 3rem;
+    font-size: 4rem;
+    color: rgb(218, 215, 215);
+    text-align: center;
    }
+
+   form input, form textarea { 
+    width: 97%;
+   }
+
+   .button {
+        width: 100%;
+   }
+
+    .left {
+        padding-left: 0%;
+        width: auto;
+    }
+
+    .right {
+    
+    }
+
+    .profile li {
+        width: 80%;
+        margin-top: 5%;
+        padding: 5%;
+    }
+
+    .aboutleft {
+      width: auto;  
+    } 
+    
+    .aboutright {
+        display: inline-block;
+        width: 100%;
+    }
+
 }
 
 
